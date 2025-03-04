@@ -1,0 +1,26 @@
+
+  #define SOUND_SENSOR_PIN 2  // KY-038 digital output
+#define LED1 3
+#define LED2 4
+#define LED3 5
+
+bool ledState = false;  // Track LED state
+
+void setup() {
+    pinMode(SOUND_SENSOR_PIN, INPUT);
+    pinMode(LED1, OUTPUT);
+    pinMode(LED2, OUTPUT);
+    pinMode(LED3, OUTPUT);
+}
+
+void loop() {
+    if (digitalRead(SOUND_SENSOR_PIN) == LOW) {  // Detects a clap
+        ledState = !ledState;  // Toggle LED state
+
+        digitalWrite(LED1, ledState);
+        digitalWrite(LED2, ledState);
+        digitalWrite(LED3, ledState);
+
+        delay(100);  // Prevents multiple triggers from a single clap
+    }
+}
