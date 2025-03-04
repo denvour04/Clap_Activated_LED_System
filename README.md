@@ -68,6 +68,34 @@ The provided code reads the digital signal from the KY-038 and toggles the LEDs 
 ✔️ Ensure the KY-038 is adjusted for proper sensitivity.
 ✔️ If the LEDs are not responding, check wiring and adjust the sensor's sensitivity using the onboard potentiometer.
 
+🚨 Potential Issues & Fixes
+🔹 Sensor Not Detecting Claps
+
+Adjust KY-038 sensitivity using the potentiometer.
+Ensure wiring is correct (D0 to Pin 2).
+Reduce background noise.
+🔹 LEDs Not Turning On/Off
+
+Check wiring: anodes to Arduino pins, cathodes to GND via resistors.
+Test LEDs separately.
+Use Serial Monitor to check if the sensor is detecting signals.
+🔹 Multiple Claps Needed
+
+Clap louder or closer to the microphone.
+Increase delay(100) to prevent multiple triggers.
+🔹 LEDs Stay ON From Start
+
+Set ledState = false; in setup().
+Check if the sensor is falsely triggering (Serial.println(digitalRead(SOUND_SENSOR_PIN));).
+🔹 False Triggers
+
+Reduce KY-038 sensitivity.
+Move away from noisy environments.
+🔹 Code Not Uploading
+
+Ensure the correct board & port are selected.
+Verify wiring and syntax before uploading.
+
 🕺🏿 Happy coding! 🕺🏿
 
 
