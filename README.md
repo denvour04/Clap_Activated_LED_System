@@ -24,7 +24,7 @@ This project uses a KY-038 sound sensor to detect claps and toggle LEDs on and o
 
 KY-038 Sound Sensor:
 
- + → Arduino 5V
++(+) → Arduino 5V
 
 G → Arduino GND
 
