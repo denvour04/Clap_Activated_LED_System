@@ -59,15 +59,15 @@ The provided code reads the digital signal from the KY-038 and toggles the LEDs 
 
 🎮 Usage
 
-👏 Clap once to turn the LEDs ON.
+👏🏿 Clap once to turn the LEDs ON.
 
-👏 Clap again to turn them OFF.
+👏🏿 Clap again to turn them OFF.
 
 ℹ️ Notes
 
 ✔️ Ensure the KY-038 is adjusted for proper sensitivity.
 ✔️ If the LEDs are not responding, check wiring and adjust the sensor's sensitivity using the onboard potentiometer.
 
-✨ Happy coding! ✨
+🕺🏿 Happy coding! 🕺🏿
 
 
